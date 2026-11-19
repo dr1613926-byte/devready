@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=77.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "devready-doctor"
+version = "1.0.0"
+description = "Readiness check for developer laptops: tools, config, and connectivity."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "DevReady Contributors" }]
+requires-python = ">=3.8"
+keywords = ["devready", "ai", "claude", "vscode", "cursor", "mcp", "preflight", "developer-tools"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Quality Assurance",
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+devready = "devready.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/dr1613926-byte/devready"
+Repository = "https://github.com/dr1613926-byte/devready"
+Issues = "https://github.com/dr1613926-byte/devready/issues"
+Changelog = "https://github.com/dr1613926-byte/devready/blob/main/CHANGELOG.md"
+Documentation = "https://github.com/dr1613926-byte/devready#readme"
+
+[tool.setuptools.packages.find]
+where = ["src"]

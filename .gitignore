@@ -1,0 +1,16 @@
+# Built Python artifacts
+packages/*/dist/
+packages/*/build/
+*.egg-info/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtualenvs
+.venv/
+venv/
+
+# Local deploy output
+hf-*.env

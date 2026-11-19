@@ -1,0 +1,1 @@
+import devready.hook; devready.hook._hook_ping()
